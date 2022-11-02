@@ -48,7 +48,12 @@ table {
 }
 a {
    text-decoration: none;
+   color: #000;
 }
 button, input {
    box-sizing: border-box;
+}
+
+button:hover {
+	cursor: pointer;
 }

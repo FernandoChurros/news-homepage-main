@@ -11,20 +11,25 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
+  <script src="./assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="body">
+  <div id="opacity" class="opacity hidden"></div>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <header class="header container">
+    <h1><img class="header__logo" src="./assets/images/logo.svg" alt="Logo da empresa W."></h1>
 
+    <nav id="nav" class="header__nav hidden">
+      <a href="#">Home</a>
+      <a href="#">New</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+      <a href="#">Categories</a>
+    </nav>
+
+    <button id="btn-menu" class="header__btn" type="button" aria-label="Menu"></button>
+  </header>
+  
   The Bright Future of Web 3.0?
 
   We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 

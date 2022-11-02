@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
+@import url('./header.css');
+
 :root {
     --soft-orange: hsl(35, 77%, 62%);
     --soft-red: hsl(5, 85%, 63%);
@@ -8,5 +10,14 @@
     --dark-grayish-blue: hsl(236, 13%, 42%);
     --very-dark-blue: hsl(240, 100%, 5%);
 
+    --icon-menu: url('../images/icon-menu.svg');
+}
+
+.body {
     font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
 }
