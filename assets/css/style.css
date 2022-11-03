@@ -18,12 +18,12 @@
 
 .body {
     font-family: 'Inter', sans-serif;
-    margin-bottom: 2rem;
 }
 
 .container {
     width: 90vw;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 p {
@@ -42,5 +42,6 @@ p {
         grid-template-rows: 1fr auto;
         column-gap: 1.5rem;
         row-gap: 3rem;
+        margin-top: 2rem;
     }
 }
