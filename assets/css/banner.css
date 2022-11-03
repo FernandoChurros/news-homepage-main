@@ -33,7 +33,8 @@
         ;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr auto;
-        gap: 1.5rem;
+        column-gap: 1.5rem;
+        row-gap: 3rem;
     }
     
     .banner {
