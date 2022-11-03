@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     height: 65px;
+    position: relative;
 }
 
 .header__logo {
@@ -21,29 +22,34 @@
     .header__btn {
         background-color: transparent;
         border: none;
-        z-index: 1;
-    }
-
-    .btn__icon-close {
-        --icon-menu: url('../images/icon-menu-close.svg');
     }
     
     .header__btn::before {
         content: var(--icon-menu);
     }
 
+    .header__btn-close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    .header__btn-close::before {
+        content: url('../images/icon-menu-close.svg');
+    }
+
     .header__nav, .opacity {
-        transition: top .5s;
+        transition: right .8s;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
     }
     
     .header__nav {
         background-color: var(--off-white);
         flex-direction: column;
         width: min(70vw, 300px);
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        right: 0;
         padding-left: 2rem;
         box-sizing: border-box;
         row-gap: 1rem;
@@ -53,17 +59,12 @@
 
     .opacity {
         width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
         background-color: #000;
         opacity: .6;
     }
     
     .hidden {
-        top: -100vh;
-        /* display: none; */
+        right: -100vw;
     }
 }
 
