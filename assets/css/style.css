@@ -2,6 +2,7 @@
 
 @import url('./header.css');
 @import url('./banner.css');
+@import url('./news.css');
 
 :root {
     --soft-orange: hsl(35, 77%, 62%);

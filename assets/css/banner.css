@@ -21,6 +21,7 @@
     font-weight: 700;
     letter-spacing: 3px;
     align-self: flex-start;
+    text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -32,6 +33,7 @@
         ;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr auto;
+        gap: 1.5rem;
     }
     
     .banner {
@@ -39,6 +41,7 @@
         grid-area: banner;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
+        gap: 1.5rem;
     }
 
     .banner__picture {
@@ -58,5 +61,6 @@
 
     .banner__btn {
         grid-area: 3/2 / 4/3;
+        align-self: flex-end;
     }
 }
